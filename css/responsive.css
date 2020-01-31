@@ -1,0 +1,98 @@
+/*----------------------------------*/
+/*--Start Responsive Section--*/
+/*----------------------------------*/
+@media only screen and (max-width:768px){
+.gallery .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.gallery .box {
+    margin: 10px;
+}
+.icon .grid .box {
+    margin: 0 10px; 
+    width: 150px;
+    }
+.contact textarea {
+    width: 70%;
+    }
+.contact .main input{
+    width: 70%;
+    }
+.contact form .submit .send {
+    margin-right: 62px;
+}
+.contact form .submit {
+    margin-left: 60px;
+    }
+}
+@media only screen and (max-width: 480px){
+ .container {
+    width: 85%;
+    margin: auto;
+}
+header .menu ul li {
+    padding: 10px;
+}
+ header .flex {
+    display: block;
+}
+ header .logo-area img {
+    width: 27%;
+}
+ header .logo-area{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px
+    }
+ header{
+    padding: 14px 0;
+}
+ header .menu{
+    width: 100%;
+    text-align: center;
+    }
+ .slider .call-to-action {
+    width: 31%;
+}
+.icon .grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+.icon .grid .box {
+    margin: 15px 0;
+    width: 100%;
+}
+.gallery h2 {
+    font-size: 29px;
+}
+.gallery .grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+.gallery .box img {
+    width: 300px;
+    height: 220px;
+}
+.gallery .box{
+    height: 220px;
+    margin: 20px 0;
+}
+.contact .main input {
+    width: 93%;
+}
+.contact textarea {
+    width: 93%;
+}
+.contact form .submit {
+    margin-left: 0px;
+    }
+.contact form .submit .send {
+    margin-right: 0px;
+}
+footer .row .right ul li {
+    margin: 0 2px;
+    padding: 9px;
+}
+}

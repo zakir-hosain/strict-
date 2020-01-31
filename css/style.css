@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+/*----------------------------------*/
+/*--Start Header Section--*/
+/*----------------------------------*/
+header{
+    background: #f6f9f9;
+    padding: 22px 0;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #5fc3ff;
+    z-index: 1;
+    transition: .5s;
+}
+header .menu ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+header .menu ul li:hover,
+header .menu ul li:hover a{
+    background: rgba(48, 160, 228, 0.89); 
+    color: #fff;
+}
+header .menu ul li a{
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+}
+header .flex{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo-area img{
+   width: 80%;
+}
+/*----------------------------------*/
+/*--Start Slider Section--*/
+/*----------------------------------*/
+.slider{
+    background: url(../images/header.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 45px 0;
+    height: 600px;
+    position: relative;
+}
+.slider .content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.slider .content h1{
+    font-size: 92px;
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.slider .content hr{
+    color: #1ba2f4;
+    background: #1ba2f4;
+    border: 1px solid #1ba2f4;
+    width: 100%;
+}
+.slider .content p{
+    color: #fff;
+    margin-bottom: 50px;
+}
+.slider .call-to-action a{
+    color: #fff;
+}
+.slider .call-to-action{
+    padding: 12px;
+    border: 1px solid #2580bb;
+    width: 27%;
+    margin: auto;
+}
+.slider .call-to-action:hover{
+    background: #15a4fa;
+}
+/*----------------------------------*/
+/*--Start Text Section--*/
+/*----------------------------------*/
+.text{
+    background: #f6f9f9;
+    padding: 30px 0;
+}
+.text h2{
+    text-align: center;
+    color: #2d3950;
+}
+.text p{
+    text-align: center;
+    color: #b2b2b2;
+}
+/*----------------------------------*/
+/*--Start Icon Section--*/
+/*----------------------------------*/
+.icon .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.icon{
+    padding: 50px 0;
+}
+.icon p{
+    color: #b2b2b2;
+    font-size: 13px;
+}
+.icon .box i{
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+    padding: 22px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.icon .box i:hover{
+    background: rgba(48, 160, 228, 0.89);
+}
+/*----------------------------------*/
+/*--Start Gallery Section--*/
+/*----------------------------------*/
+.gallery{
+    background: #f6f9f9;
+    text-align: center;
+    padding: 40px 0;
+}
+.gallery .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.gallery .box{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    
+}
+.gallery .box img{
+    width: 260px;
+    height: 200px;
+}
+.gallery .box i{
+    background: #138fd9;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+.gallery .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #138fd9;
+    opacity: 0;
+    transition: .5s;
+    width: 100%;
+}
+.gallery .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 0;
+    background: #138fd9;
+}
+.gallery .box:hover .overlay{
+    opacity: .7;
+}
+.gallery h2{
+    font-size: 33px;
+    color: #2d3950;
+}
+/*----------------------------------*/
+/*--Start Contact Section--*/
+/*----------------------------------*/
+.contact{
+    background: linear-gradient(rgba(45, 57, 80, 0.9), rgba(45, 57, 80, 0.9)), url(../images/footer.png);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+.contact h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.contact p{
+    color: #757980;
+    text-align: center;
+}
+.contact .main input{
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 43px;
+    background: none;
+    border: 2px solid #555c68;
+    color: #757980;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.contact textarea{
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 120px;
+    background: none;
+    border: 2px solid #555c68;
+    color: #757980;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.contact form .submit input{
+    display: inline-block;
+    text-align: left;
+}
+.contact form .submit{
+    margin-left: 195px;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.contact form .submit .send{
+    padding: 10px;
+    border: 1px solid #2580bb;
+    width: 13%;
+    margin: auto;
+    text-align: center;
+    margin-right: 199px;
+}
+.contact form .submit .send:hover{
+    background: #15a4fa;
+}
+.contact form .submit .check{
+    margin-top: 10px;
+}
+/*----------------------------------*/
+/*--Start Footer Section--*/
+/*----------------------------------*/
+footer{
+    padding: 30px 0;
+    color: #b5b6b6;
+    font-size: 13px;
+}
+footer .row .right ul li{
+    display: inline-block;
+    margin: 0 5px;
+    background: #5fc3ff;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+footer .row .right ul li:hover{
+    background: #15a4fa;
+}
+footer .row .right ul li:hover i{
+    transform: rotate(360deg);
+    transition: .3s;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between
+}
+
